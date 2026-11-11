@@ -1,0 +1,10 @@
+dataset,model,n,r2_mean,r2_sd
+Career anxiety (perceived risk -> anxiety),Ridge,3111,0.022410024484643777,0.002328207169846994
+Career anxiety (perceived risk -> anxiety),RandomForest,3111,0.0458222862277237,0.003770028961158744
+Career anxiety (perceived risk -> anxiety),XGBoost,3111,0.03796372902810576,0.003898539228218073
+Cognitive strain survey (benefit/cost -> regret),Ridge,557,0.3246760695955393,0.0038127951553332223
+Cognitive strain survey (benefit/cost -> regret),RandomForest,557,0.43329745473906184,0.009568434154172226
+Cognitive strain survey (benefit/cost -> regret),XGBoost,557,0.49017626183840807,0.012523336446088084
+Cognitive dependence survey (usage/trust -> dependence),Ridge,2613,0.5917996975120513,0.0010218305017212145
+Cognitive dependence survey (usage/trust -> dependence),RandomForest,2613,0.7151193606992626,0.001759391864230524
+Cognitive dependence survey (usage/trust -> dependence),XGBoost,2613,0.7164381022137731,0.0017704380336257665

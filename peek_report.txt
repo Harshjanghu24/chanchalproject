@@ -1,0 +1,137 @@
+======================================================================
+CAREER ANXIETY  rows=3156
+missing per column:
+ai_knowledge          45
+ai_tool_perception    91
+
+--- career_anxiety
+career_anxiety
+Medium        1634
+Low            648
+High           461
+No Anxiety     413
+
+--- ai_knowledge
+ai_knowledge
+Medium    2374
+Low        523
+High       214
+NaN         45
+
+--- ai_replace_jobs
+ai_replace_jobs
+Partially    2329
+No            540
+Fully         287
+
+--- ai_takeover_time
+ai_takeover_time
+Never          1056
+6–10 years      679
+11–20 years     435
+1–5 years       435
+21–50 years     376
+50+ years       175
+
+--- ai_future_perspective
+ai_future_perspective
+I think AI will replace some human jobs but also create new opportunities.                         1358
+I believe AI will significantly replace human jobs and create major challenges.                     507
+I strongly believe AI will completely take over human jobs and pose serious threat to humanity.     487
+I strongly believe AI cannot take over human activities and will be a helpful tool for humans.      429
+I believe AI will mostly assist humans, with limited job replacement.                               375
+
+--- academic_year
+academic_year
+1st Year    1120
+2nd Year     985
+3rd Year     762
+4th Year     289
+
+--- gender
+gender
+Male      1932
+Female    1224
+
+--- number of AI tools listed
+ai_tools_used
+2      50
+3    3086
+4      14
+5       2
+6       4
+
+======================================================================
+DATA_SET_EX  rows=557
+item  1 | missing=0    | 1. Gender
+item  3 | missing=0    | 3. Field of Study (Department)
+item  4 | missing=0    | 4. AI Tool Usage Experience
+item  5 | missing=0    | 5.  How often do you use AI tools  to find information or solve proble
+item  6 | missing=0    mean=4.17 | 6. To what extend do you rely on AI tools for decision-making?
+item  7 | missing=0    mean=4.25 | 7. When faced with a problem, how likely are you to rely on AI tools (
+item  8 | missing=0    mean=4.82 | 8.  I treat GenAI content as a starting point and try to develop my ow
+item  9 | missing=0    mean=4.94 | 9. I often cross-check information provided by AI tools with other sou
+item 10 | missing=0    mean=4.32 | 10.  I am willing to accept AI recommendations without verification wh
+item 11 | missing=0    mean=5.31 | 11.  I fear that excessive reliance on AI could weaken my ability to t
+item 12 | missing=0    mean=4.73 | 12.  I am aware that using AI reduces my ability to recall previously 
+item 13 | missing=0    mean=4.93 | 13.  I recognize that my over-reliance on AI is reducing opportunities
+item 14 | missing=5    mean=4.29 | 14. I feel remorseful about my tendency to avoid intellectual challeng
+item 15 | missing=0    mean=4.17 | 15.  I feel regretful when I realize I've become overly dependent on A
+item 16 | missing=0    mean=4.17 | 16.  I experience regret after completing tasks knowing that I relied 
+item 17 | missing=0    mean=5.54 | 17.  I find AI tools help me save time when searching for information.
+item 18 | missing=0    mean=4.72 | 18. Using generative AI tools enhances my confidence in solving proble
+item 19 | missing=0    mean=5.06 | 19. I am confident that using generative AI enhances my learning effic
+item 20 | missing=0    mean=4.60 | 20. I feel satisfied with the quality of learning I achieve when using
+item 21 | missing=0    mean=5.20 | 21.  My overall learning experience is enhanced when I use AI as a col
+item 22 | missing=0    mean=4.82 | 22. Using generative AI tools gives me a positive emotional experience
+item 23 | missing=0    mean=4.64 | 23.  Interacting with GenAI does not require a lot of my mental effort
+item 24 | missing=0    mean=5.10 | 24.  I find using AI reduces the cognitive burden of complex tasks.
+item 26 | missing=0    | 26. What is your Avg CGPA?
+item  - | missing=410  | Thank you for completing the survey. If you have any additional though
+item  - | missing=557  | Score
+
+--- 1. Gender
+1. Gender
+Male      425
+Female    132
+
+--- 3. Field of Study (Department)
+3. Field of Study (Department)
+CSE         486
+SWE          21
+English      13
+Others       12
+EEE           6
+Pharmacy      6
+Civil         4
+CIS           4
+NFE           3
+BBA           2
+
+--- 4. AI Tool Usage Experience
+4. AI Tool Usage Experience
+More than 2 years     286
+1-2 years             199
+6-12 months            48
+Less than 6 months     24
+
+======================================================================
+COGNITIVE DEPENDENCE  rows=2613
+Likert labels seen: ['Agree', 'Disagree', 'Neutral', 'Strongly Agree', 'Strongly Disagree']
+groups: AI Usage (5 items), Cognitive Dependence (5 items), Trust in AI (5 items), Critical Thinking (5 items), Academic Decision-Making (5 items)
+
+--- Gender
+Gender
+Male      1551
+Female    1062
+
+--- Academic Level
+Academic Level
+Undergraduate    1587
+Postgraduate     1026
+
+--- University Type
+University Type
+Private University    1445
+Public University     1164
+Other                    4

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Anxiety & Cognitive Modeling Survey</title>
+<style>
+body{font-family:Arial,sans-serif;background:#f5f7fb;color:#172033;margin:0}.wrap{max-width:820px;margin:auto;padding:20px}
+header,.card{background:#fff;border:1px solid #dfe3eb;border-radius:16px;padding:22px;margin-bottom:16px}
+h1{margin:0 0 8px}h2{margin-top:0}.muted{color:#667085;font-size:14px}
+.q{padding:16px 0;border-top:1px solid #edf0f5}.q:first-child{border-top:0}
+label.title{display:block;font-weight:600;margin-bottom:9px}.req{color:#b42318}
+input[type=number],select,textarea{width:100%;box-sizing:border-box;padding:11px;border:1px solid #ccd2dd;border-radius:8px;font-size:16px}
+textarea{min-height:90px}.opts{display:grid;gap:8px}.opts label{padding:9px;border-radius:8px}.opts label:hover{background:#f5f6fa}
+.scale{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}.scale label{border:1px solid #ccd2dd;border-radius:8px;padding:8px;text-align:center;font-size:12px}.scale input{display:block;margin:auto auto 4px}
+button{padding:13px 18px;border:0;border-radius:9px;background:#4f46e5;color:white;font-weight:700;font-size:15px;cursor:pointer}
+#msg{margin-top:14px;font-weight:600}.success{color:#067647}.error{color:#b42318}
+.progress{position:sticky;top:0;background:#f5f7fb;padding:8px 0;z-index:2}.bar{height:7px;background:#e5e7eb;border-radius:9px}.fill{height:100%;width:0;background:#4f46e5;border-radius:9px}
+@media(max-width:560px){.wrap{padding:10px}.scale{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body><div class="wrap">
+<header>
+<h1>AI Anxiety & Cognitive Modeling Survey</h1>
+<p class="muted">Academic research questionnaire examining perceived economic, privacy, cognitive, human-value, and environmental/social threats related to AI.</p>
+<p class="muted"><strong>Privacy:</strong> Do not enter your name, phone number, email, or other identifying information.</p>
+</header>
+<div class="progress"><span id="pct" class="muted">0% completed</span><div class="bar"><div id="fill" class="fill"></div></div></div>
+<form id="f"></form>
+<div id="msg"></div>
+</div>
+<script>
+const SCRIPT_URL="PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
+
+const sections=[
+["Basic Information",[
+["age","Age","number",null,true],
+["status","Current status","radio",["Student","Employed","Self-employed","Unemployed","Other"],true],
+["education","Highest education level","select",["School","Diploma","Undergraduate","Postgraduate","Doctorate","Other"],true]]],
+["AI Usage",[
+["ai_frequency","How often do you use AI tools?","radio",["Never","Rarely","Sometimes","Often","Daily"],true],
+["ai_use","What do you mainly use AI for?","radio",["Study/education","Work/professional tasks","Coding/development","Creative/content work","Personal use","Other"],true],
+["ai_time","Approximate daily AI usage time","select",["Less than 15 minutes","15–30 minutes","30–60 minutes","1–2 hours","More than 2 hours"],true]]],
+["AI Anxiety",[
+["ai_anxiety_1","I feel anxious about how quickly AI is developing."],
+["ai_anxiety_2","I worry about the future impact of AI on my life."],
+["ai_anxiety_3","I feel uncertain about whether humans can remain in control of advanced AI."],
+["ai_anxiety_4","I sometimes feel uncomfortable or threatened by increasing AI capabilities."],
+["ai_anxiety_5","I am concerned that AI development may create serious problems for society."]]],
+["Economic & Career Threat",[
+["economic_1","I worry that AI could reduce employment opportunities in my field."],
+["economic_2","I am concerned that AI could make some human jobs unnecessary."],
+["economic_3","I worry that my skills may become less valuable because of AI."],
+["economic_4","I feel uncertain about my future career because of AI."]]],
+["Privacy & Human Control",[
+["privacy_1","I am concerned about AI systems collecting or using personal data."],
+["privacy_2","I worry that AI could reduce my control over my personal information."],
+["privacy_3","I am uncomfortable when AI makes decisions involving people's personal data."],
+["privacy_4","I fear that increasing AI use could reduce individual privacy."]]],
+["Cognitive Threat & Human Thinking",[
+["cognitive_1","I worry that excessive dependence on AI could reduce people's ability to think independently."],
+["cognitive_2","I feel that using AI for too many tasks may reduce human problem-solving practice."],
+["cognitive_3","I am concerned that people may rely on AI instead of developing their own reasoning skills."],
+["cognitive_4","I worry that AI could weaken human decision-making or analytical abilities."],
+["cognitive_5","I feel that maintaining independent human thinking is important even when AI is available."]]],
+["Human Value & Uniqueness",[
+["human_value_1","I worry that increasingly capable AI could make human abilities feel less unique."],
+["human_value_2","I am concerned that AI could reduce the perceived value of human creativity."],
+["human_value_3","I sometimes wonder whether human intelligence will remain special as AI improves."],
+["human_value_4","I worry that society may value AI-generated work more than human work."]]],
+["Environmental & Societal Concerns",[
+["environment_1","I am concerned about the energy required by large-scale AI systems."],
+["environment_2","I am concerned about the environmental impact of AI infrastructure such as data centers."],
+["environment_3","I worry that the rapid expansion of AI could create wider social problems."],
+["environment_4","I think the environmental and societal costs of AI should be considered alongside its benefits."],
+["environment_5","I believe AI development should be environmentally and socially responsible."]]],
+["Trust, Safety & Human Oversight",[
+["trust_1","I trust AI more when humans can monitor or override its decisions."],
+["trust_2","I feel safer when AI systems clearly explain how important decisions are made."],
+["trust_3","I believe humans should remain responsible for high-impact AI decisions."],
+["trust_4","I would be more comfortable using AI if strong safety rules were in place."],
+["trust_5","I think users should have meaningful control over how AI systems affect them."]]],
+["Personal Perspective",[
+["overall","Overall, do you think AI will have more positive or negative effects on society?","radio",["Mostly positive","Somewhat positive","Both equally / balanced","Somewhat negative","Mostly negative"],true],
+["biggest_concern","What is your biggest concern about AI?","textarea",null,false],
+["safety_need","What would make you feel safer or more comfortable using AI?","textarea",null,false],
+["comments","Any other thoughts about AI anxiety, human thinking, jobs, privacy, or society?","textarea",null,false]]]
+];
+
+const f=document.getElementById("f");
+function esc(s){return s.replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));}
+function render(){
+let n=1;
+sections.forEach((sec,si)=>{
+ let box=document.createElement("section");box.className="card";
+ box.innerHTML=`<h2>Section ${si+1}: ${esc(sec[0])}</h2>`;
+ if(si>=2&&si<=8) box.innerHTML+=`<p class="muted">Rate each statement: 1 = Strongly Disagree, 5 = Strongly Agree.</p>`;
+ sec[1].forEach(q=>{
+   let key=q[0],text=q[1],type=q[2]||"likert",options=q[3]||null,req=q.length<5?true:q[4];
+   let d=document.createElement("div");d.className="q";
+   d.innerHTML=`<label class="title">${esc(text)} ${req?'<span class="req">*</span>':''}</label>`;
+   if(type==="radio"){
+     let x=document.createElement("div");x.className="opts";
+     options.forEach(o=>x.innerHTML+=`<label><input type="radio" name="${key}" value="${esc(o)}" ${req?"required":""}> ${esc(o)}</label>`);
+     d.appendChild(x);
+   }else if(type==="select"){
+     let s=document.createElement("select");s.name=key;s.required=req;s.innerHTML='<option value="">Select</option>'+options.map(o=>`<option>${esc(o)}</option>`).join("");d.appendChild(s);
+   }else if(type==="number"){
+     let i=document.createElement("input");i.type="number";i.name=key;i.min=13;i.max=100;i.required=req;d.appendChild(i);
+   }else if(type==="textarea"){
+     let t=document.createElement("textarea");t.name=key;t.required=req;d.appendChild(t);
+   }else{
+     let x=document.createElement("div");x.className="scale";
+     ["1","2","3","4","5"].forEach((v,j)=>x.innerHTML+=`<label><input type="radio" name="${key}" value="${v}" required>${v}<br>${["Strongly Disagree","Disagree","Neutral","Agree","Strongly Agree"][j]}</label>`);
+     d.appendChild(x);
+   }
+   box.appendChild(d);n++;
+ });
+ f.appendChild(box);
+});
+let actions=document.createElement("div");actions.className="card";actions.innerHTML='<button type="submit">Submit Response</button><p class="muted">Your response is sent to the researcher's Google Sheet after submission.</p>';f.appendChild(actions);
+}
+render();
+
+function update(){
+let req=[...f.querySelectorAll("[required]")],groups=new Set(),done=0;
+req.forEach(e=>{if(e.type==="radio")groups.add(e.name);else if(e.value)done++});
+groups.forEach(g=>{if(f.querySelector(`input[name="${CSS.escape(g)}"]:checked`))done++});
+let total=new Set(req.map(e=>e.type==="radio"?e.name:e.name)).size;
+let p=total?Math.round(done/total*100):0;document.getElementById("fill").style.width=p+"%";document.getElementById("pct").textContent=p+"% completed";
+}
+f.addEventListener("input",update);f.addEventListener("change",update);update();
+
+f.addEventListener("submit",async e=>{
+e.preventDefault();
+const msg=document.getElementById("msg");
+if(!f.checkValidity()){f.reportValidity();return}
+if(SCRIPT_URL.includes("PASTE_YOUR")){msg.className="error";msg.textContent="The form is ready, but the Google Apps Script URL has not been connected yet. Follow the setup guide.";return}
+const data=Object.fromEntries(new FormData(f).entries());
+let anxiety=0;for(let i=1;i<=5;i++)anxiety+=Number(data["ai_anxiety_"+i]);data.ai_anxiety_score=(anxiety/5).toFixed(2);
+data.submitted_at=new Date().toISOString();
+msg.className="muted";msg.textContent="Submitting…";
+try{
+ await fetch(SCRIPT_URL,{method:"POST",mode:"no-cors",headers:{"Content-Type":"text/plain;charset=utf-8"},body:JSON.stringify(data)});
+ msg.className="success";msg.textContent="Thank you! Your response has been submitted successfully.";
+ f.reset();update();window.scrollTo({top:0,behavior:"smooth"});
+}catch(err){msg.className="error";msg.textContent="Submission failed. Please check the connection and try again."}
+});
+</script></body></html>

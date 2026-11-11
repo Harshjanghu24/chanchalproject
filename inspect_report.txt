@@ -1,0 +1,205 @@
+==============================================================================
+FILE: .\datasets\507—Survey for Hunan China Teachers Technostress Factors.xlsx
+  sheet:data rows=507 cols=37  missing cells=0
+    - index [int64] unique=507 min=1 max=507
+    - teacher_status [str] unique=1 e.g. 'yes '
+    - Gender  [str] unique=1 e.g. 'Female '
+    - Teaching_Experience [str] unique=4 e.g. '11-15 years '
+    - Educational_background [str] unique=2 e.g. 'Undergraduate course  '
+    - level_of_teaching [str] unique=2 e.g. 'secondary school '
+    - Teaching_field [str] unique=3 e.g. 'Humanities and Social Sciences '
+    - Frequency_of_using_the_Internet [str] unique=4 e.g. '6-8 hours a day '
+    - TO1 [int64] unique=5 min=1 max=5
+    - TO2 [int64] unique=5 min=1 max=5
+    - TO3 [int64] unique=5 min=1 max=5
+    - TO4 [int64] unique=5 min=1 max=5
+    - TO5 [int64] unique=5 min=1 max=5
+    - TO6 [int64] unique=5 min=1 max=5
+    - TC1 [int64] unique=5 min=1 max=5
+    - TC2 [int64] unique=5 min=1 max=5
+    - TC3 [int64] unique=5 min=1 max=5
+    - TC4 [int64] unique=5 min=1 max=5
+    - TC5 [int64] unique=5 min=1 max=5
+    - TI1 [int64] unique=5 min=1 max=5
+    - TI2 [int64] unique=5 min=1 max=5
+    - TI3 [int64] unique=5 min=1 max=5
+    - TI4 [int64] unique=5 min=1 max=5
+    - TU1 [int64] unique=5 min=1 max=5
+    - TU2 [int64] unique=5 min=1 max=5
+    - TU3 [int64] unique=5 min=1 max=5
+    - TA1 [int64] unique=5 min=1 max=5
+    - TA2 [int64] unique=5 min=1 max=5
+    - TA3 [int64] unique=5 min=1 max=5
+    - TA4 [int64] unique=5 min=1 max=5
+    - TA5 [int64] unique=5 min=1 max=5
+    - TA6 [int64] unique=5 min=1 max=5
+    - TA7 [int64] unique=5 min=1 max=5
+    - TA8 [int64] unique=5 min=1 max=5
+    - technostress1 [int64] unique=5 min=1 max=5
+    - technostress2 [int64] unique=5 min=1 max=5
+    - technostress3 [int64] unique=5 min=1 max=5
+  sheet:definition rows=38 cols=1  missing cells=5
+    - Techno-overload (TO) [str] unique=33 e.g. 'TO1: Technology forced me to work at a f'
+==============================================================================
+FILE: .\datasets\AI_Literacy_questionnaire_data_.csv
+   rows=1205 cols=58  missing cells=0
+    - user_id [int64] unique=1146 min=1 max=1147
+    - year [int64] unique=3 min=2022 max=2024
+    - Grade (year of study): [int64] unique=7 min=1 max=7
+    - Age [int64] unique=39 min=17 max=56
+    - Gender [str] unique=3 e.g. 'male'
+    - Country [str] unique=8 e.g. 'SK'
+    - Study programme: [str] unique=8 e.g. 'IT'
+    - How many hours of AI-related courses have you taken (from 0 to many, not per week, summary [int64] unique=56 min=0 max=1000
+    - L1 [int64] unique=5 min=1 max=5
+    - L2 [int64] unique=5 min=1 max=5
+    - L3 [int64] unique=5 min=1 max=5
+    - L4 [int64] unique=5 min=1 max=5
+    - L5 [int64] unique=5 min=1 max=5
+    - RE1 [int64] unique=5 min=1 max=5
+    - RE2 [int64] unique=5 min=1 max=5
+    - RE3 [int64] unique=5 min=1 max=5
+    - RE4 [int64] unique=5 min=1 max=5
+    - RE5 [int64] unique=5 min=1 max=5
+    - RE6 [int64] unique=5 min=1 max=5
+    - R1 [int64] unique=5 min=1 max=5
+    - R2 [int64] unique=5 min=1 max=5
+    - R3 [int64] unique=5 min=1 max=5
+    - R4 [int64] unique=5 min=1 max=5
+    - R5 [int64] unique=5 min=1 max=5
+    - R6 [int64] unique=5 min=1 max=5
+    - SG1 [int64] unique=5 min=1 max=5
+    - SG2 [int64] unique=5 min=1 max=5
+    - SG3 [int64] unique=5 min=1 max=5
+    - SG4 [int64] unique=5 min=1 max=5
+    - SG5 [int64] unique=5 min=1 max=5
+    - CM1 [int64] unique=5 min=1 max=5
+    - CM2 [int64] unique=5 min=1 max=5
+    - CM3 [int64] unique=5 min=1 max=5
+    - CM4 [int64] unique=5 min=1 max=5
+    - A1 [int64] unique=5 min=1 max=5
+    - A2 [int64] unique=5 min=1 max=5
+    - A3 [int64] unique=5 min=1 max=5
+    - A4 [int64] unique=5 min=1 max=5
+    - A5 [int64] unique=5 min=1 max=5
+    - IM1 [int64] unique=6 min=0 max=5
+    - IM2 [int64] unique=6 min=0 max=5
+    - IM3 [int64] unique=6 min=0 max=5
+    - IM4 [int64] unique=6 min=0 max=5
+    - S1 [int64] unique=6 min=0 max=5
+    - S2 [int64] unique=6 min=0 max=5
+    - S3 [int64] unique=6 min=0 max=5
+    - S4 [int64] unique=6 min=0 max=5
+    - S5 [int64] unique=6 min=0 max=5
+    - C1 [int64] unique=6 min=0 max=5
+    - C2 [int64] unique=6 min=0 max=5
+    - C3 [int64] unique=6 min=0 max=5
+    - C4 [int64] unique=6 min=0 max=5
+    - C5 [int64] unique=6 min=0 max=5
+    - BI1 [int64] unique=6 min=0 max=5
+    - BI2 [int64] unique=6 min=0 max=5
+    - BI3 [int64] unique=6 min=0 max=5
+    - BI4 [int64] unique=6 min=0 max=5
+    - BI5 [int64] unique=6 min=0 max=5
+==============================================================================
+FILE: .\datasets\Career_Anxiety_due_to_AI.xlsx
+  sheet:Sheet1 rows=3156 cols=15  missing cells=136
+    - participant_id [str] unique=3156 e.g. 'P0001'
+    - university [str] unique=5 e.g. 'Daffodil International University'
+    - department [str] unique=23 e.g. 'Department of Computer Science & Enginee'
+    - age [int64] unique=10 min=18 max=27
+    - gender [str] unique=2 e.g. 'Female'
+    - academic_year [str] unique=4 e.g. '4th Year'
+    - ai_knowledge [str] unique=3 e.g. 'Medium'
+    - ai_tools_used [str] unique=97 e.g. 'ChatGPT, Quiltbot, Grammarly'
+    - career_path [str] unique=160 e.g. 'Researcher'
+    - ai_tool_perception [str] unique=68 e.g. "I don't know for now"
+    - ai_future_perspective [str] unique=5 e.g. 'I believe AI will mostly assist humans, '
+    - ai_replace_jobs [str] unique=3 e.g. 'No'
+    - ai_takeover_time [str] unique=6 e.g. 'Never'
+    - career_anxiety [str] unique=4 e.g. 'Low'
+    - consent [str] unique=1 e.g. 'Yes'
+==============================================================================
+FILE: .\datasets\Data_set_Ex.csv
+   rows=557 cols=26  missing cells=972
+    - 1. Gender [str] unique=2 e.g. 'Male'
+    - 3. Field of Study (Department) [str] unique=10 e.g. 'EEE'
+    - 4. AI Tool Usage Experience [str] unique=4 e.g. 'More than 2 years'
+    - 5.  How often do you use AI tools  to find information or solve problems?  [str] unique=5 e.g. 'Always'
+    - 6. To what extend do you rely on AI tools for decision-making?
+
+আপনি সিদ্ধান্ত গ্রহণের জন্ [int64] unique=7 min=1 max=7
+    - 7. When faced with a problem, how likely are you to rely on AI tools (e.g., ChatGPT, Copil [int64] unique=7 min=1 max=7
+    - 8.  I treat GenAI content as a starting point and try to develop my own ideas about it.
+
+আ [int64] unique=7 min=1 max=7
+    - 9. I often cross-check information provided by AI tools with other sources.  
+
+ আমি প্রায় [int64] unique=7 min=1 max=7
+    - 10.  I am willing to accept AI recommendations without verification when I am under time p [int64] unique=7 min=1 max=7
+    - 11.  I fear that excessive reliance on AI could weaken my ability to think independently.
+ [int64] unique=7 min=1 max=7
+    - 12.  I am aware that using AI reduces my ability to recall previously learned information. [int64] unique=7 min=1 max=7
+    - 13.  I recognize that my over-reliance on AI is reducing opportunities for independent pro [int64] unique=7 min=1 max=7
+    - 14. I feel remorseful about my tendency to avoid intellectual challenges by turning to AI  [float64] unique=7 min=1.0 max=7.0
+    - 15.  I feel regretful when I realize I've become overly dependent on AI instead of develop [int64] unique=7 min=1 max=7
+    - 16.  I experience regret after completing tasks knowing that I relied too heavily on AI ra [int64] unique=7 min=1 max=7
+    - 17.  I find AI tools help me save time when searching for information.
+
+আমি মনে করি তথ্য অ [int64] unique=7 min=1 max=7
+    - 18. Using generative AI tools enhances my confidence in solving problems independently
+
+AI [int64] unique=7 min=1 max=7
+    - 19. I am confident that using generative AI enhances my learning efficiency.
+
+আমি আত্মবিশ্ [int64] unique=7 min=1 max=7
+    - 20. I feel satisfied with the quality of learning I achieve when using AI tools appropriat [int64] unique=7 min=1 max=7
+    - 21.  My overall learning experience is enhanced when I use AI as a collaborative tool.
+
+ আ [int64] unique=7 min=1 max=7
+    - 22. Using generative AI tools gives me a positive emotional experience.
+
+GenAI tool  ব্যবহ [int64] unique=7 min=1 max=7
+    - 23.  Interacting with GenAI does not require a lot of my mental effort.
+
+AI এর সাথে intera [int64] unique=7 min=1 max=7
+    - 24.  I find using AI reduces the cognitive burden of complex tasks.
+
+আমি মনে করি , AI ব্যা [int64] unique=7 min=1 max=7
+    - 26. What is your Avg CGPA?
+Your privacy is very important to us. All information you provi [str] unique=98 e.g. '4'
+    - Thank you for completing the survey. If you have any additional thoughts, suggestions, or  [str] unique=70 e.g. 'No thoughts '
+    - Score [float64] unique=0 min=nan max=nan
+==============================================================================
+FILE: .\datasets\_(AI_Cognitive_Dependence_Survey_Data_BD_StudentsResponses) - Sheet1.csv
+   rows=2613 cols=30  missing cells=0
+    - Gender [str] unique=2 e.g. 'Male'
+    - Age [int64] unique=11 min=18 max=28
+    - University Type [str] unique=3 e.g. 'Private University'
+    - Academic Level [str] unique=2 e.g. 'Postgraduate'
+    - Department/Discipline [str] unique=35 e.g. 'Pharmacy'
+    - AI Usage [I use generative AI tools regularly for academic purposes.] [str] unique=5 e.g. 'Agree'
+    - AI Usage [I use AI tools for assignment writing.] [str] unique=5 e.g. 'Strongly Agree'
+    - AI Usage [I use AI tools for study planning.] [str] unique=5 e.g. 'Disagree'
+    - AI Usage [I use AI tools for research-related tasks.] [str] unique=5 e.g. 'Strongly Disagree'
+    - AI Usage [I depend on AI tools to complete academic work faster.] [str] unique=5 e.g. 'Disagree'
+    - Cognitive Dependence [I feel uncomfortable completing academic tasks without AI tools.] [str] unique=5 e.g. 'Disagree'
+    - Cognitive Dependence [I rely on AI before thinking independently.] [str] unique=5 e.g. 'Strongly Agree'
+    - Cognitive Dependence [AI tools have become essential to my academic workflow.] [str] unique=5 e.g. 'Strongly Agree'
+    - Cognitive Dependence [I use AI tools even for simple academic decisions.] [str] unique=5 e.g. 'Strongly Agree'
+    - Cognitive Dependence [I feel less confident working without AI assistance.] [str] unique=5 e.g. 'Agree'
+    - Trust in AI [I trust AI-generated academic responses.] [str] unique=5 e.g. 'Neutral'
+    - Trust in AI [AI tools usually provide reliable information.] [str] unique=5 e.g. 'Strongly Disagree'
+    - Trust in AI [I rarely verify AI-generated answers before using them.] [str] unique=5 e.g. 'Agree'
+    - Trust in AI [I believe AI tools make better academic suggestions than I can myself.] [str] unique=5 e.g. 'Agree'
+    - Trust in AI [I trust AI recommendations for academic decision-making.] [str] unique=5 e.g. 'Disagree'
+    - Critical Thinking [Using AI tools reduces my need to think deeply.] [str] unique=5 e.g. 'Disagree'
+    - Critical Thinking [I analyze less when using AI-generated responses.] [str] unique=5 e.g. 'Strongly Agree'
+    - Critical Thinking [I prefer AI explanations over conducting my own research.] [str] unique=5 e.g. 'Strongly Disagree'
+    - Critical Thinking [AI tools reduce my independent problem-solving efforts.] [str] unique=5 e.g. 'Agree'
+    - Critical Thinking [I rely more on AI-generated ideas than my own thinking.] [str] unique=5 e.g. 'Strongly Agree'
+    - Academic Decision-Making [AI tools influence my academic decisions.] [str] unique=5 e.g. 'Neutral'
+    - Academic Decision-Making [I use AI suggestions for study-related decisions.] [str] unique=5 e.g. 'Strongly Agree'
+    - Academic Decision-Making [AI tools help me choose research topics or project ideas.] [str] unique=5 e.g. 'Neutral'
+    - Academic Decision-Making [I use AI recommendations to improve academic performance.] [str] unique=5 e.g. 'Neutral'
+    - Academic Decision-Making [AI tools positively affect my academic decision-making process.] [str] unique=5 e.g. 'Strongly Agree'

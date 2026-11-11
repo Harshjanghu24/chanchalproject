@@ -1,0 +1,199 @@
+======================================================================
+FILE: AI_Literacy_questionnaire_data_.csv
+======================================================================
+Rows: 1205
+Columns: 58
+
+Column list:
+  user_id, year, Grade (year of study):, Age, Gender, Country, Study programme:, How many hours of AI-related courses have you taken (from 0 to many, not per week, summary in your study):, L1, L2, L3, L4, L5, RE1, RE2, RE3, RE4, RE5, RE6, R1, R2, R3, R4, R5, R6, SG1, SG2, SG3, SG4, SG5, CM1, CM2, CM3, CM4, A1, A2, A3, A4, A5, IM1, IM2, IM3, IM4, S1, S2, S3, S4, S5, C1, C2, C3, C4, C5, BI1, BI2, BI3, BI4, BI5
+
+Dtypes:
+user_id                                                                                                       int64
+year                                                                                                          int64
+Grade (year of study):                                                                                        int64
+Age                                                                                                           int64
+Gender                                                                                                          str
+Country                                                                                                         str
+Study programme:                                                                                                str
+How many hours of AI-related courses have you taken (from 0 to many, not per week, summary in your study):    int64
+L1                                                                                                            int64
+L2                                                                                                            int64
+L3                                                                                                            int64
+L4                                                                                                            int64
+L5                                                                                                            int64
+RE1                                                                                                           int64
+RE2                                                                                                           int64
+RE3                                                                                                           int64
+RE4                                                                                                           int64
+RE5                                                                                                           int64
+RE6                                                                                                           int64
+R1                                                                                                            int64
+R2                                                                                                            int64
+R3                                                                                                            int64
+R4                                                                                                            int64
+R5                                                                                                            int64
+R6                                                                                                            int64
+SG1                                                                                                           int64
+SG2                                                                                                           int64
+SG3                                                                                                           int64
+SG4                                                                                                           int64
+SG5                                                                                                           int64
+CM1                                                                                                           int64
+CM2                                                                                                           int64
+CM3                                                                                                           int64
+CM4                                                                                                           int64
+A1                                                                                                            int64
+A2                                                                                                            int64
+A3                                                                                                            int64
+A4                                                                                                            int64
+A5                                                                                                            int64
+IM1                                                                                                           int64
+IM2                                                                                                           int64
+IM3                                                                                                           int64
+IM4                                                                                                           int64
+S1                                                                                                            int64
+S2                                                                                                            int64
+S3                                                                                                            int64
+S4                                                                                                            int64
+S5                                                                                                            int64
+C1                                                                                                            int64
+C2                                                                                                            int64
+C3                                                                                                            int64
+C4                                                                                                            int64
+C5                                                                                                            int64
+BI1                                                                                                           int64
+BI2                                                                                                           int64
+BI3                                                                                                           int64
+BI4                                                                                                           int64
+BI5                                                                                                           int64
+dtype: object
+
+Missingness (isna count / %):
+                                                    missing_count  missing_pct
+user_id                                                         0          0.0
+year                                                            0          0.0
+Grade (year of study):                                          0          0.0
+Age                                                             0          0.0
+Gender                                                          0          0.0
+Country                                                         0          0.0
+Study programme:                                                0          0.0
+How many hours of AI-related courses have you t...              0          0.0
+L1                                                              0          0.0
+L2                                                              0          0.0
+L3                                                              0          0.0
+L4                                                              0          0.0
+L5                                                              0          0.0
+RE1                                                             0          0.0
+RE2                                                             0          0.0
+RE3                                                             0          0.0
+RE4                                                             0          0.0
+RE5                                                             0          0.0
+RE6                                                             0          0.0
+R1                                                              0          0.0
+R2                                                              0          0.0
+R3                                                              0          0.0
+R4                                                              0          0.0
+R5                                                              0          0.0
+R6                                                              0          0.0
+SG1                                                             0          0.0
+SG2                                                             0          0.0
+SG3                                                             0          0.0
+SG4                                                             0          0.0
+SG5                                                             0          0.0
+CM1                                                             0          0.0
+CM2                                                             0          0.0
+CM3                                                             0          0.0
+CM4                                                             0          0.0
+A1                                                              0          0.0
+A2                                                              0          0.0
+A3                                                              0          0.0
+A4                                                              0          0.0
+A5                                                              0          0.0
+IM1                                                             0          0.0
+IM2                                                             0          0.0
+IM3                                                             0          0.0
+IM4                                                             0          0.0
+S1                                                              0          0.0
+S2                                                              0          0.0
+S3                                                              0          0.0
+S4                                                              0          0.0
+S5                                                              0          0.0
+C1                                                              0          0.0
+C2                                                              0          0.0
+C3                                                              0          0.0
+C4                                                              0          0.0
+C5                                                              0          0.0
+BI1                                                             0          0.0
+BI2                                                             0          0.0
+BI3                                                             0          0.0
+BI4                                                             0          0.0
+BI5                                                             0          0.0
+
+Zero-value counts (relevant: 0 used as N/A code on some scales):
+user_id                                                                                                         0
+year                                                                                                            0
+Grade (year of study):                                                                                          0
+Age                                                                                                             0
+How many hours of AI-related courses have you taken (from 0 to many, not per week, summary in your study):    742
+L1                                                                                                              0
+L2                                                                                                              0
+L3                                                                                                              0
+L4                                                                                                              0
+L5                                                                                                              0
+RE1                                                                                                             0
+RE2                                                                                                             0
+RE3                                                                                                             0
+RE4                                                                                                             0
+RE5                                                                                                             0
+RE6                                                                                                             0
+R1                                                                                                              0
+R2                                                                                                              0
+R3                                                                                                              0
+R4                                                                                                              0
+R5                                                                                                              0
+R6                                                                                                              0
+SG1                                                                                                             0
+SG2                                                                                                             0
+SG3                                                                                                             0
+SG4                                                                                                             0
+SG5                                                                                                             0
+CM1                                                                                                             0
+CM2                                                                                                             0
+CM3                                                                                                             0
+CM4                                                                                                             0
+A1                                                                                                              0
+A2                                                                                                              0
+A3                                                                                                              0
+A4                                                                                                              0
+A5                                                                                                              0
+IM1                                                                                                           257
+IM2                                                                                                           320
+IM3                                                                                                           328
+IM4                                                                                                           493
+S1                                                                                                            315
+S2                                                                                                            513
+S3                                                                                                            246
+S4                                                                                                            516
+S5                                                                                                            400
+C1                                                                                                            386
+C2                                                                                                            332
+C3                                                                                                            348
+C4                                                                                                            311
+C5                                                                                                            422
+BI1                                                                                                           324
+BI2                                                                                                           178
+BI3                                                                                                           156
+BI4                                                                                                           154
+BI5                                                                                                           144
+dtype: int64
+
+First 5 rows:
+   user_id  year  Grade (year of study):  Age  ...  BI2  BI3  BI4  BI5
+0        1  2022                       1   20  ...    0    0    0    0
+1        2  2022                       3   22  ...    4    5    3    3
+2        3  2022                       1   17  ...    3    4    3    3
+3        4  2022                       3   22  ...    3    4    4    4
+4        5  2022                       1   20  ...    4    4    4    4
+
+[5 rows x 58 columns]
+
